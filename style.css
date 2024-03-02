@@ -1,5 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: 10%;
+	width: 100vw;
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+p {
+	font-size: 2rem;
+	max-height: 100px;
+	overflow-y: hidden;
+}
+
+em > strong > p{
+	font-size: 5px;
+}
+
+
 li {
 	background-color: tan;
+	height: 100px;
+	width: 50px;
 }
 
 /* nth-child
@@ -7,8 +32,9 @@ li {
 	1st-child
 	n is just a placeholder for a number 
 */
-li:nth-child(3n),
-li:nth-child(2n) {
+li:nth-child(-n+2),
+li:nth-child(2n+5)
+{
 	background-color: darkseagreen;
 }
 /* 
